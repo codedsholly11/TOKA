@@ -1,6 +1,29 @@
 import React from 'react'
 import Image from 'next/image'
+import { Content } from 'next/font/google'
+
 const Mission = () => {
+  const Missions= [
+    {
+      img:"/chat.png",
+      header:"Ask a question",
+      Content:"Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+      btn:"Learn more"
+    },
+    {
+      img:"/shipping.png",
+      header:"Partnership",
+      Content:"Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+      btn:"Learn more"
+    },
+    {
+      img:"/priority.png",
+      header:"Career",
+      Content:"Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.",
+      btn:"Learn more"
+    },
+  ]
+
   return (
     <div className='bg-[#f7f7f7] px-[80px]  pb-[60px]'>
       <div className='flex flex-col md:flex-row py-[50px] h-[65vh] gap-[80px] justify-center items-center'>
@@ -13,24 +36,17 @@ const Mission = () => {
         </div>
       </div>
       <div className='flex flex-col md:flex-row gap-[35px] items-center'>
-        <div className='bg-white rounded-xl px-[50px] py-[30px] flex flex-col gap-[15px] md:w-[27vw] w-[90vw] items-center text-center'>
-            <img src="/chat.png" alt="Description of image" width={80} height={80} />
-            <p className='text-xl font-bold'>Ask a question</p>
-            <p>Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
-            <p className='text-[#fb6426] font-bold'>Learn more</p>
+        {
+          Missions.map((n,index)=>(
+            <div className='bg-white rounded-xl px-[50px] py-[30px] flex flex-col gap-[15px] md:w-[27vw] w-[90vw] items-center text-center'>
+            <img src={n.img} alt="Description of image" width={80} height={80} />
+            <p className='text-xl font-bold'>{n.header}</p>
+            <p>{n.Content}</p>
+            <p className='text-[#fb6426] font-bold'>{n.btn}</p>
         </div>
-        <div className='bg-white rounded-xl px-[50px] py-[30px] flex flex-col gap-[15px] md:w-[27vw] w-[90vw] items-center text-center'>
-            <img src="/shipping.png" alt="Description of image" width={80} height={80} />
-            <p className='text-xl font-bold'>Partnership</p>
-            <p>Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
-            <p className='text-[#fb6426] font-bold'>Learn more</p>
-        </div>
-        <div className='bg-white rounded-xl px-[50px] py-[30px] flex flex-col gap-[15px] md:w-[27vw] w-[90vw] items-center text-center'>
-            <img src="/priority.png" alt="Description of image" width={80} height={80} />
-            <p className='text-xl font-bold'>Career</p>
-            <p>Cras eu semper neque, sit amet aliquet odio. Donec volutpat enim quis mollis consequat.</p>
-            <p className='text-[#fb6426] font-bold'>Learn more</p>
-        </div>
+          ))
+        }
+    
       </div>
       <div></div>
     </div>

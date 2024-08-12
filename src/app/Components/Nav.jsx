@@ -1,26 +1,30 @@
 import React from 'react'
+import '../Components/nav.css'
+import { FaAngleDown } from "react-icons/fa6";
 
 const Nav = () => {
   return (
-    <div className=' bg-[#f7edf7]'>
+    <div className=' bg-[#f7edf7] sticky top-0'>
       <nav className='flex items-center gap-[20vw] px-[20px] pt-[20px] '>
         <div>
             <h1 className='text-4xl font-bold '>Toka</h1>
         </div>
         <div className='flex items-center justify-between bg-[#f7edf7]'>
-            <div>
-                <select className='w-[118px] bg-[#f7edf7]'>
-                    <option value="">NFT</option>
-                    <option value="">NFT Landing Page</option>
-                    <option value="">NFT Collection Landing</option>
-                    <option value="">NFT Platform</option>
-                    <option value="">NFT MarketPlace</option>
-                    <option value="">NFT Game</option>
-                    <option value="">NFT DAO Platform</option>
-                    <option value="">NFT Website</option>
-                    <option value="">Metaverse Website</option>
-                </select>
+          <div  class="drop1">
+          <div className='flex'>
+          <h1 className='pr-2 cursor-pointer'>NFT</h1>
+          <FaAngleDown />
+          </div>
+            <div class="nftmenu">
+                    <menu>NFT Landing Page</menu>
+                    <menu>NFT Collection Landing</menu>
+                    <menu>NFT Platform</menu>
+                    <menu>NFT MarketPlace</menu>
+                    <menu>NFT DAO Platform</menu>
+                    <menu>NFT Website</menu>
+                    <menu>Metaverse Website</menu>
             </div>
+          </div>
             <div>
                 <select className='w-[118px] bg-[#f7edf7]'>
                     <option value="">Crypto</option>
