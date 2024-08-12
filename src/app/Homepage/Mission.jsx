@@ -25,7 +25,7 @@ const Mission = () => {
   ]
 
   return (
-    <div className='bg-[#f7f7f7] px-[80px]  pb-[60px]'>
+    <div className='bg-[#f7f7f7] px-[80px]  pb-[60px] pt-[30px]'>
       <div className='flex flex-col md:flex-row py-[50px] h-[65vh] gap-[80px] justify-center items-center'>
         <div className='md:w-[30vw] w-[90vw] flex flex-col items-center md:items-start gap-[20px]'>
             <p className='text-[#36bb91] font-bold '>OUR MISSION</p>

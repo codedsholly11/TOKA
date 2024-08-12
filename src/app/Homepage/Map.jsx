@@ -8,7 +8,7 @@ const Map = () => {
             <p className='text-4xl font-bold'>Find our office</p>
         </div>
         <div>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3946.1659777238283!2d4.555587975012533!3d8.483237191557935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x103653e02d37c1cf%3A0x2715d3291448c2df!2sToshconsult%20-%20The%20best%20website%20Design%20Agency%20%7C%20Website%20Development%20Agency%20in%20Ilorin%20kwara%20state!5e0!3m2!1sen!2sng!4v1723469348905!5m2!1sen!2sng" width="600" height="450"></iframe>
+        <iframe className='w-[98vw]' src="https://www.google.com/maps/embed?pb=!1m16!1m12!1m3!1d126277.12834221663!2d4.485425225710998!3d8.483793703837764!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!2m1!1sMTN%20PLAZA%20%2C1st%20floor%20opposite%20Juniwad%20filling%20Station%20%2CTanke%20%2C%20Ilorin%20Kwara%20state!5e0!3m2!1sen!2sng!4v1723477219441!5m2!1sen!2sng" width="600" height="450" style={{border:"0"}} allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
       
     </div>
